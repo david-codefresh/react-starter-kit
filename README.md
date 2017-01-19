@@ -5,8 +5,8 @@
 
 | pipeline name   | Last build status  |
 |---|---|
-|Build-first-image   | [![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=containers101&repoName=react-starter-kit&branch=master&pipelineName=react-starter-kit&accountName=containers101&type=cf-2)]( https://g.codefresh.io/repositories/containers101/react-starter-kit/builds?filter=trigger:build;branch:master;service:587f93d2bb28d1010059ed16~react-starter-kit)  |
-|Build-codefresh-yml   | [![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=containers101&repoName=react-starter-kit&branch=master&pipelineName=react-starter-kit&accountName=containers101&type=cf-2)]( https://g.codefresh.io/repositories/containers101/react-starter-kit/builds?filter=trigger:build;branch:master;service:587f93d2bb28d1010059ed16~react-starter-kit)  |
+|Build-first-image   | [![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=containers101&repoName=react-starter-kit&branch=master&pipelineName=Build-first-image&accountName=containers101&type=cf-2)]( https://g.codefresh.io/repositories/containers101/react-starter-kit/builds?filter=trigger:build;branch:master;service:587fb677009ed10100def2d2~Build-first-image)  |
+|Build-codefresh-yml   | [![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=containers101&repoName=react-starter-kit&branch=master&pipelineName=Build-codefresh-yml&accountName=containers101&type=cf-2)]( https://g.codefresh.io/repositories/containers101/react-starter-kit/builds?filter=trigger:build;branch:master;service:587f93d2bb28d1010059ed16~Build-codefresh-yml)  |
 
 ## Setup your first service using [Codefresh](https://codefresh.io/).
 
