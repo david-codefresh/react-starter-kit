@@ -135,5 +135,12 @@ We assume you already forked this repo and create a service for it
   - `AWS_ACCESS_KEY` your access key id
   - `AWS_SECRET_KEY` your secret key
   - `AWS_REGION` the region of your registry
+Your screen should look like:
+
+<p align="center">
+  <b>Click Build</b><br>
+  <img src="./images/aws-ecr-envs.png" width="500">
+</p>
+
   
 
