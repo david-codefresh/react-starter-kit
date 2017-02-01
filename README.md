@@ -103,3 +103,43 @@ We at Codefresh already build for you the basic `codefresh.yml` template, use it
 - Build and launch
 
 ###### Full credit for the application [react-starter-kit](https://github.com/kriasoft/react-starter-kit)
+
+
+
+### Push your image to AWS-ECR
+#### Requirements:
+  * registry url
+  * accessKeyId
+  * secretAccessKey
+  * region
+
+#### How-to get the requirements
+- Go to [Amazon console](https://console.aws.amazon.com/console/home)
+- Open `EC2 Container Service`
+- Open `Respositories` and create new one, in our case `containers101/reactstarterkit`
+- Create
+- Get the repository url and the region
+- Get the `accessKeyId` and the `secretAccessKey` from the console settings
+
+
+####Configuration in Codefresh:
+We assume you already forked this repo and create a service for it
+- In `./codefresh.aws.ecr.example.yml` change `build_step` config
+  - `image_name` should be the new name of your repository.
+  - Push your change
+- Open the service and add new pipeline
+- Switch to `Use YML build`
+- Change the `YML File Location` to be `./codefresh.aws.ecr.example.yml`
+- Under Environment variables fill the next variables:
+  - `AWS_REGISTRY` to be the registry url (note that the url already have the repository name)
+  - `AWS_ACCESS_KEY` your access key id
+  - `AWS_SECRET_KEY` your secret key
+  - `AWS_REGION` the region of your registry
+Your screen should look like:
+
+<p align="center">
+  <img src="./images/aws-ecr-envs.png" width="500">
+</p>
+
+  
+
