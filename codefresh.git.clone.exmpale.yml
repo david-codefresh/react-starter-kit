@@ -3,7 +3,6 @@ steps:
   git-clone:
     type: git-clone
     description: "Step description"
-    working_directory: /cf-api
     repo: https://${{GIT_TOKEN}}@github.com/codefresh-io/cf-api.git
 
     revision: 'develop'
