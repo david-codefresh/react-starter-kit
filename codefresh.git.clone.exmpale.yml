@@ -3,6 +3,5 @@ steps:
   git-clone:
     type: git-clone
     description: "Step description"
-    repo: https://${{GIT_TOKEN}}@github.com/codefresh-io/cf-api.git
-
+    repo: https://${{GIT_TOKEN}}@github.com/${{REPO_OWNER}}/${{REPO_NAME}}.git
     revision: 'develop'
