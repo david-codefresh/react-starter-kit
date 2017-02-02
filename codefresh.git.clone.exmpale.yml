@@ -4,4 +4,4 @@ steps:
     type: git-clone
     description: "Step description"
     repo: https://${{GIT_TOKEN}}@github.com/${{REPO_OWNER}}/${{REPO_NAME}}.git
-    revision: 'develop'
+    revision: ${{BRANCH}}

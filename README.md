@@ -142,5 +142,23 @@ Your screen should look like:
   <img src="./images/aws-ecr-envs.png" width="500">
 </p>
 
-  
 
+### Git-clone step with github token
+
+#### How to generate the github token
+- Go to the page [Personal access tokens](https://github.com/settings/tokens)
+- Generate and configure the access for personal token
+
+####Configuration in Codefresh:
+We assume you already forked this repo and create a service for it
+- Open the service and add new pipeline
+- Switch to `Use YML build`
+- Change the `YML File Location` to be `./codefresh.git.clone.exmpale.yml`
+- Under Environment variables fill the next variables:
+  - `GIT_TOKEN` your personal access token that you generated on github
+  - `REPO_OWNER` owner of repository that you want to clone
+  - `REPO_NAME` name of repository that you want to clone
+  - `BRANCH` branch of repo
+
+Your screen should look like:
+<img src="./images/git-clone-pipeline.png">
