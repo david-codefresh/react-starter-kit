@@ -1,15 +1,20 @@
 version: '1.0'
 steps:
 
-  unit test step:
+  unit_test_step:
+    title: Unit test
     image: node:6.9.2
     commands:
         - echo hello
 
   build_step:
-    title: "Building image..."
+    title: Building image
     type: build
     image_name: containers101/reactstarterkit
 
 
-
+  launch_environment:
+    title: Launching an environment
+    type: launch-composition
+    composition: docker-compose.yml
+    environment_name: react starter environment

@@ -1,0 +1,6 @@
+version: '2'
+services:
+  react-starter-kit:
+    image: 'containers101/reactstarterkit:master'
+    ports:
+      - 3000
