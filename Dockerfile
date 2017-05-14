@@ -23,7 +23,7 @@ SHELL ["/bin/bash", "-c"]
 
 COPY ./package.json /app2/
 
-RUN cd /app2 && yarn install
+RUN cd /app2 && npm install
 
 COPY . /app2/
 
